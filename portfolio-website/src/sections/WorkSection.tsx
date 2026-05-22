@@ -47,7 +47,7 @@ function ProjectBlock({ project, index }: ProjectBlockProps) {
   return (
     <div
       className={cn(
-        "relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center py-20 lg:py-28",
+        "relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center py-4 lg:py-8",
         "border-t border-white/4",
       )}
     >
@@ -57,7 +57,7 @@ function ProjectBlock({ project, index }: ProjectBlockProps) {
       </div>
 
       {/* ── Text side ─────────────────────────────────────────────── */}
-      <div className={cn("flex flex-col gap-8", isEven ? "" : "lg:order-2")}>
+      <div className={cn("flex flex-col gap-6", isEven ? "" : "lg:order-2")}>
         {/* Project header */}
         <div className="flex flex-col gap-3">
           <Reveal delay={0.05}>
@@ -194,7 +194,7 @@ export default function WorkSection() {
 
       <div className="relative max-w-7xl mx-auto">
         {/* Section header */}
-        <div className="pt-28 pb-12 flex flex-col gap-6 max-w-2xl">
+        <div className="py-6 flex flex-col gap-2 max-w-2xl">
           <Reveal>
             <div className="flex items-center gap-3">
               <div className="w-8 h-px bg-[#afafaf]/40" />
