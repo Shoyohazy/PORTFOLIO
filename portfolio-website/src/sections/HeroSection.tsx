@@ -51,7 +51,9 @@ function CTAButton({
       whileTap={{ scale: 0.97 }}
       transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
       className={cn(
-        "inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium",
+        "inline-flex items-center justify-center gap-2",
+        "px-7 py-3.5",
+        "rounded-full text-sm font-medium",
         "transition-all duration-300",
         "focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/30",
         primary
@@ -160,7 +162,7 @@ export default function HeroSection() {
           <motion.div variants={fadeIn} className="flex items-center gap-3">
             <div className="w-1.5 h-1.5 rounded-full bg-[#afafaf] animate-pulse" />
             <span className="text-xs text-[#6e6e6e] tracking-[0.2em] uppercase font-medium">
-              Portfolio — 2024
+              Portfolio
             </span>
           </motion.div>
 
